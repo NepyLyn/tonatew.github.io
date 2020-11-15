@@ -1,0 +1,42 @@
+/* --------------- Border Shampoo Ruda----------------- */
+.borderShampooRuda {
+  width: 4.7cm;
+  height: 7.2cm;
+  border-radius: 16px;
+  border-width: 0.15cm;
+}
+.logoShampooRuda {
+  width: 4.5cm;
+  padding: 2px 0px;
+}
+.sloganShampooRuda {
+  font-size: 75%;
+}
+.productShampooRuda {
+  display: flex;
+  align-items: center;
+  padding: 0px 2px 2px 2px;
+}
+.propertyShampooRuda {
+  font-size: 75%;
+}
+.warning {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 72%;
+  padding: 2px 8px;
+}
+.warning .red {
+  color: rgb(255, 64, 64);
+  font-weight: bold;
+}
+.footerShampooRuda {
+  flex-grow: 3;
+}
+.barcodeShampooRuda {
+  padding: 0px;
+}
+.quantityShampooRuda {
+  font-size: 80%;
+  margin: 2px 4px;
+}

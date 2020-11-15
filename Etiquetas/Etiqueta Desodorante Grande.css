@@ -1,0 +1,33 @@
+/* --------------- Border Desodorante Grande----------------- */
+.borderDesodGrande {
+  width: 3.7cm;
+  height: 5.2cm;
+  border-radius: 16px;
+  border-width: 0.15cm;
+}
+.logoDesodGrande {
+  width: 2.5cm;
+  padding: 2px 0px;
+}
+.sloganDesodGrande {
+  font-size: 75%;
+}
+.productDesodGrande {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  flex-grow: 2;
+}
+.propertyDesodGrande {
+  font-size: 75%;
+}
+.footerDesodGrande {
+  flex-grow: 3;
+}
+.barcodeDesodGrande {
+  padding: 0px;
+}
+.quantityDesodGrande {
+  font-size: 80%;
+  margin: 2px 4px;
+}

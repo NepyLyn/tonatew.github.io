@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport", initial-scale=1.0">
+    <title>Etiqueta Circular Jabones</title>
+
+    <script src="../Scripts CCSS/listener.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="General Styles.css" />
+
+    <style>
+      .arc {
+        background-color: aliceblue;
+        width: 4cm;
+      }
+      .circleText {
+        font-size: 60%;
+        text-anchor: start;
+      }
+    </style>
+  </head>
+
+  <body>
+    <svg viewBox="0 0 100 100" class="arc">
+      <path d="M0,50 a1,1 0 0,0 100,0" fill="transparent"></path>
+      <defs>
+        <path id="p1" d="M0,50 a1,1 0 0,0 100,0" fill="blue"></path>
+      </defs>
+      <text>
+        <textPath
+          id="productProperty"
+          xlink:href="#p1"
+          startOffset="50%"
+          text-anchor="middle"
+          class="property propertyCircularChica"
+        >
+          1test text xd xd
+        </textPath>
+      </text>
+    </svg>
+  </body>
+</html>

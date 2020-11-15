@@ -1,0 +1,32 @@
+.borderDesodChica {
+  width: 2.8cm;
+  height: 3.8cm;
+  border-radius: 16px;
+  border-width: 0.1cm;
+}
+.logoDesodChica {
+  width: 2cm;
+  padding: 2px 0px;
+}
+.sloganDesodChica {
+  font-size: 65%;
+}
+.productDesodChica {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  flex-grow: 2;
+}
+.propertyDesodChica {
+  font-size: 60%;
+}
+.footerDesodChica {
+  flex-grow: 3;
+}
+.barcodeDesodChica {
+  padding: 0px;
+}
+.quantityDesodChica {
+  font-size: 70%;
+  margin: 2px 4px;
+}

@@ -1,0 +1,35 @@
+/* --------------- Liquidos ----------------- */
+.borderLiquidos {
+  width: 4.7cm;
+  height: 6.7cm;
+  border-radius: 16px;
+  border-width: 0.15cm;
+}
+.logoLiquidos {
+  width: 3.5cm;
+  padding: 2px 0px;
+}
+.sloganLiquidos {
+  font-size: 110%;
+}
+.productLiquidos {
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  flex-grow: 2;
+  font-size: 120%;
+  font-weight: bold;
+}
+.propertyLiquidos {
+  font-size: 90%;
+}
+.footerLiquidos {
+  flex-grow: 2;
+}
+.barcodeLiquidos {
+  padding: 0px;
+}
+.quantityLiquidos {
+  font-size: 100%;
+  margin: 2px 4px;
+}

@@ -1,0 +1,34 @@
+.borderCircularGrande {
+  width: 5.7cm;
+  height: 5.7cm;
+  border-radius: 50%;
+  border-width: 0.15cm;
+}
+.arc {
+  width: 5.6cm; /*Adjust this to fit the circle text*/
+  position: absolute;
+  left: auto;
+  right: auto;
+}
+.propertyCircularGrande {
+  font-size: 43%;
+  padding: 4px;
+}
+.logoCircularGrande {
+  width: 2.5cm;
+  padding-top: 6px;
+}
+.sloganCircularGrande {
+  font-size: 90%;
+}
+.barcodeCircularGrande {
+  font-size: 120%;
+}
+.productCircularGrande {
+  font-size: 110%;
+  padding: 0px 8px;
+}
+.quantityCircularGrande {
+  font-size: 100%;
+  padding: 8px 0px;
+}

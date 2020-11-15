@@ -1,0 +1,39 @@
+/* --------------- Jabon Solido----------------- */
+.borderJabonSolido {
+  width: 5.7cm;
+  height: 3.7cm;
+  border-radius: 16px;
+  border-width: 0.15cm;
+}
+.logoJabonSolido {
+  height: 1cm;
+  padding: 2px 0px;
+}
+.sloganJabonSolido {
+  font-size: 80%;
+}
+.productJabonSolido {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 0px 4px;
+  font-size: 110%;
+}
+.propertyJabonSolido {
+  font-size: 80%;
+}
+.barcodeJabonSolido {
+  padding: 4px 0px;
+}
+.footerJabonSolido {
+  flex-grow: 3;
+}
+.barcodeJabonSolido {
+  padding: 2px;
+}
+.quantityJabonSolido {
+  font-size: 75%;
+  padding: 4px;
+  bottom: 4px;
+  right: 8px;
+}

@@ -1,0 +1,56 @@
+/* Browser properties Reset */
+body {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+/* Add this class with border class to add a image background */
+.imgBG {
+  z-index: 1;
+  background: rebeccapurple;
+  background-image: url("Resources/circles.png");
+  background-size: contain;
+}
+
+/* --------------- General CSS ----------------- */
+.border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: rgb(207, 164, 70);
+  z-index: -1;
+}
+.slogan {
+  /*width: 8ex; /* To center, equals to 8 text characters */
+  font-family: "Roboto", Arial;
+  color: #6b6b6b;
+  text-align: center;
+}
+
+/* Product */
+.product {
+  font-family: "Roboto", Arial;
+  text-align: center;
+  color: rgb(207, 164, 70);
+  font-weight: bold;
+}
+.property {
+  font-family: "Roboto", Arial;
+  text-align: center;
+  color: #4d4d4d;
+  fill: #4d4d4d;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.quantity {
+  font-family: "Roboto", Arial;
+  color: #777777;
+}

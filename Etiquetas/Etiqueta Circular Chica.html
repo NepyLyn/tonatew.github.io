@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport", initial-scale=1.0">
+    <title>Etiqueta Circular Chica</title>
+
+    <script src="../Scripts CCSS/listener.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="General Styles.css" />
+    <link rel="stylesheet" href="Etiqueta Circular Chica.css" />
+  </head>
+
+  <body>
+    <div id="frame" class="border borderCircularChica">
+      <svg viewBox="0 0 100 100" class="arc">
+        <path d="M0,50 a1,1 0 0,0 100,0" fill="transparent"></path>
+        <defs>
+          <path id="p1" d="M0,50 a1,1 0 0,0 100,0" fill="blue"></path>
+        </defs>
+        <text>
+          <textPath
+            id="productProperty"
+            xlink:href="#p1"
+            startOffset="50%"
+            text-anchor="middle"
+            class="property propertyCircularChica"
+          >
+            Desvanece Cicatrices y Manchas
+          </textPath>
+        </text>
+      </svg>
+      <!-- Here are the Logo and the Arnimex Phrase -->
+      <img
+        class="logoCircularChica"
+        src="../Resources/logo.png"
+        alt="Arnimex Logo"
+      />
+      <div class="slogan sloganCircularChica">Árnica Mexicana</div>
+
+      <!-- Barcode -->
+      <div id="barcodeImg" class="barcode barcodeCircularChica">barcode</div>
+
+      <!-- Product Name -->
+      <div id="productName" class="product productCircularChica">
+        Crema de Tepezcohuite y Cuachalalate
+      </div>
+
+      <div id="quantity" class="quantity quantityCircularChica">50 g</div>
+    </div>
+  </body>
+</html>
