@@ -5,10 +5,11 @@
     <meta name="viewport" , initial-scale=1.0">
     <title>Generador Etiquetas</title>
     <!-- Scripts -->
-    <script src="Scripts CCSS/Generador Etiquetas.js"></script>
+    <script src="Scripts CCSS/index.js"></script>
+    <script src="Scripts CCSS/html2canvas.min.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="Scripts CCSS/Generador Etiquetas.css" />
+    <link rel="stylesheet" href="Scripts CCSS/index.css" />
     <link rel="stylesheet" href="Scripts CCSS/dropList.css" />
   </head>
 
@@ -110,12 +111,13 @@
             placeholder="gr / ml"
             onkeyup="setText(event, '#quantity')"
           />
-          <label for="LoadBarcodeButton"></label>
         </div>
-
-        <button name="barcodeButton" id="LoadBarcodeButton" class="loadButton">
-          Cargar Codigo Barras
-        </button>
+        <div class="labelAndForm">
+          <label for="uploadBarcodeInput" class="loadButton">
+            Seleccionar Codigo Barras
+          </label>
+          <input id="uploadBarcodeInput" type="file" accept="/image*" onchange="changeBarcode()"/>
+        </div>
         <img
           id="barcodeImg"
           src="Resources/barcode.gif"
@@ -126,12 +128,18 @@
     <hr />
 
     <div class="visualizer">
+      <button
+      id="generateImageButton"
+      class="generateButton"
+      onclick="saveLabel()"
+    >
+      Guardar Etiqueta
+    </button>
       <iframe
         src="Etiquetas/Etiqueta Circular Chica.html"
         frameborder="0"
         id="labelFrame"
         scrolling="no"
-        onload="changeEtiquetaColors()"
       ></iframe>
     </div>
   </body>

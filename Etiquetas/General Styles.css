@@ -4,6 +4,13 @@ body {
   padding: 0px;
   border: 0px;
 }
+html.build-mode body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 /* Add this class with border class to add a image background */
 .imgBG {
   z-index: 1;
@@ -13,6 +20,19 @@ body {
 }
 
 /* --------------- General CSS ----------------- */
+.generateButton {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 8px;
+  padding: 4px;
+  background-color: var(--primary-dark);
+  color: var(--text-on-dark-bg-color);
+  border-radius: var(--elementsBorderRadius);
+  border: 2px solid var(--primary-dark);
+}
+.generateButton:hover {
+  border-color: var(--secondary-color);
+}
 .border {
   display: flex;
   flex-direction: column;
@@ -53,4 +73,7 @@ body {
 .quantity {
   font-family: "Roboto", Arial;
   color: #777777;
+}
+.barcode {
+  z-index: -1;
 }

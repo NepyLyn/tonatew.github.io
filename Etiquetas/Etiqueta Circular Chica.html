@@ -6,6 +6,8 @@
     <title>Etiqueta Circular Chica</title>
 
     <script src="../Scripts CCSS/listener.js"></script>
+    <script src="../Scripts CCSS/html2canvas.min.js"></script>
+    <script src="../Scripts CCSS/dom-to-image.min.js"></script>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
@@ -20,7 +22,7 @@
       <svg viewBox="0 0 100 100" class="arc">
         <path d="M0,50 a1,1 0 0,0 100,0" fill="transparent"></path>
         <defs>
-          <path id="p1" d="M0,50 a1,1 0 0,0 100,0" fill="blue"></path>
+          <path id="p1" d="M0,49 a1,1 0 0,0 100,0" fill="blue"></path>
         </defs>
         <text>
           <textPath
@@ -43,7 +45,12 @@
       <div class="slogan sloganCircularChica">Árnica Mexicana</div>
 
       <!-- Barcode -->
-      <div id="barcodeImg" class="barcode barcodeCircularChica">barcode</div>
+      <img
+        src=""
+        alt="barcode"
+        id="barcodeImg"
+        class="barcode barcodeCircularChica"
+      />
 
       <!-- Product Name -->
       <div id="productName" class="product productCircularChica">

@@ -21,6 +21,8 @@
 }
 .barcodeCircularChica {
   font-size: 80%;
+  width: 3.6cm;
+  text-align: center;
 }
 .productCircularChica {
   font-size: 70%;

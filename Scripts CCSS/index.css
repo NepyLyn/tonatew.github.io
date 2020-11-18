@@ -1,0 +1,139 @@
+:root {
+  /* App Theme / Brand */
+  --primary-color: #b4eced;
+  --primary-dark: #034955;
+  --secondary-color: #fdbbbd;
+  --seconday-dark: #fcbabb;
+  --text-on-light-bg-color: #023538;
+  --text-on-dark-bg-color: #e9ffff;
+
+  --inputElementsBorder: 2px solid var(--primary-color);
+  --elementsBorderRadius: 4px;
+  --panelsBorderRadius: 16px;
+}
+/* The arnimex font is the html file (idk still why firefox doesn't allow font here) */
+body {
+  margin: 0;
+  padding: 0;
+}
+html.build-mode body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+input {
+  flex: 1 0 auto;
+  height: 1.5em;
+  border-radius: var(--elementsBorderRadius);
+  border: var(--inputElementsBorder);
+}
+iframe {
+  width: 4cm;
+  height: 4cm;
+  margin: 0px;
+}
+.verticalContainer {
+  display: flex;
+  flex-direction: column;
+}
+.horizontalContainer {
+  display: flex;
+  flex-direction: row;
+}
+h1 {
+  text-align: center;
+  font-family: arnimex;
+  letter-spacing: 0.5rem;
+  margin: 0;
+  padding: 16px 0px 0px 0px;
+  color: var(--text-on-light-bg-color);
+  flex: 3;
+}
+#config {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Arial", sans-serif;
+  color: var(--primary-dark);
+  font-size: 1em;
+  padding: 16px 16px;
+}
+.configCategory {
+  border: 4px solid var(--secondary-color);
+  margin: 0px 8px;
+  border-radius: var(--panelsBorderRadius);
+}
+.labelAndForm {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+.labelAndForm > label {
+  margin: 0px 0px 4px 0px;
+}
+.dropList {
+  color: var(--text-on-light-bg-color);
+  border: var(--inputElementsBorder);
+}
+.dropList:hover {
+  border-color: var(--primary-dark);
+}
+.dropList:focus {
+  border-color: var(--primary-dark);
+}
+table {
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+tr {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.textInput {
+  display: flex;
+  flex-direction: row;
+  margin: 8px;
+  align-items: center;
+}
+#barcodeImg {
+  align-self: center;
+  width: 12em;
+  margin: 0px 8px 8px;
+}
+input[type="file"] {
+  display: none;
+}
+.loadButton {
+  text-align: center;
+  background-color: var(--primary-color);
+  border: var(--inputElementsBorder);
+  border-radius: var(--elementsBorderRadius);
+  padding: 6px 12px;
+}
+.loadButton:hover {
+  border-color: var(--primary-dark);
+}
+.visualizer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.generateButton {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 8px;
+  padding: 4px;
+  background-color: var(--primary-dark);
+  color: var(--text-on-dark-bg-color);
+  border-radius: var(--elementsBorderRadius);
+  border: 2px solid var(--primary-dark);
+}
+.generateButton:hover {
+  border-color: var(--secondary-color);
+}

@@ -22,7 +22,9 @@
   font-size: 90%;
 }
 .barcodeCircularGrande {
+  text-align: center;
   font-size: 120%;
+  width: 5.4cm;
 }
 .productCircularGrande {
   font-size: 110%;
