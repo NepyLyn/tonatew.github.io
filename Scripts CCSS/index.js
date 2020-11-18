@@ -243,7 +243,6 @@ function changeBarcode() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  document.domain = "localHost";
   iframe = document.getElementById("labelFrame");
   loadIngredientList(document.getElementsByClassName("ingredientsDropList"));
   changeEtiqueta();
