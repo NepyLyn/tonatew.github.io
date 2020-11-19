@@ -21,7 +21,10 @@
   </style>
 
   <body>
-    <h1>Generador de Etiquetas ArniMex</h1>
+    <div id="header">
+      <h1>Generador de Etiquetas ArniMex</h1>
+      <a class="headerItem" href="GeneradorPlantilla.html">Generador de Plantilla</a>
+    </div>
     <div id="config">
       <div id="configType" class="verticalContainer configCategory">
         <div class="labelAndForm">
@@ -116,7 +119,12 @@
           <label for="uploadBarcodeInput" class="loadButton">
             Seleccionar Codigo Barras
           </label>
-          <input id="uploadBarcodeInput" type="file" accept="/image*" onchange="changeBarcode()"/>
+          <input
+            id="uploadBarcodeInput"
+            type="file"
+            accept="/image*"
+            onchange="changeBarcode()"
+          />
         </div>
         <img
           id="barcodeImg"
@@ -127,14 +135,14 @@
     </div>
     <hr />
 
-    <div class="visualizer">
+    <div id="visualizer">
       <button
-      id="generateImageButton"
-      class="generateButton"
-      onclick="saveLabel()"
-    >
-      Guardar Etiqueta
-    </button>
+        id="generateImageButton"
+        class="generateButton"
+        onclick="saveLabel()"
+      >
+        Guardar Etiqueta
+      </button>
       <iframe
         src="Etiquetas/Etiqueta Circular Chica.html"
         frameborder="0"

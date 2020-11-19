@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport", initial-scale=1.0">
+    <title>Generador Plantillas</title>
+
+    <link rel="stylesheet" href="Scripts CCSS/index.css" />
+    <link rel="stylesheet" href="Scripts CCSS/dropList.css" />
+    <link rel="stylesheet" href="Scripts CCSS/GeneradorPlantilla.css" />
+
+    <script src="/Scripts CCSS/GeneradorPlantilla.js"></script>
+
+    <style>
+      @font-face {
+        font-family: arnimex;
+        src: url("Resources/arnimex.ttf");
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Generador de Plantillas</h1>
+    <div id="config">
+      <div id="configType" class="verticalContainer configCategory">
+        <div class="labelAndForm">
+          <label for="etiquetaSelect">Etiqueta tipo:</label>
+          <select
+            name="labelType"
+            id="etiquetaSelect"
+            onchange="changeSizeDescription()"
+            class="dropList"
+          >
+            <option selected value="Circular Chica">Circular Chica</option>
+            <option value="Circular Grande">Circular Grande</option>
+            <option value="Desodorante Chica">Desodorante Chica</option>
+            <option value="Desodorante Grande">Desodorante Grande</option>
+            <option value="Jabones">Jabón Sólido</option>
+            <option value="Liquidos">Gel-Shampoo-Jabon Líquido</option>
+            <option value="Shampoo Ruda">Shampoo Ruda</option>
+          </select>
+        </div>
+        <table>
+          <tr class="horizontalContainer">
+            <th>Ancho</th>
+            <th>Alto</th>
+          </tr>
+          <tr class="horizontalContainer">
+            <td id="labelWidth">4 cm</td>
+            <td id="labelHeight">4 cm</td>
+          </tr>
+        </table>
+        <div class="labelAndForm">
+          <label for="uploadBarcodeInput" class="loadButton">
+            Seleccionar Imagen
+          </label>
+          <input
+            id="uploadBarcodeInput"
+            type="file"
+            accept="/image*"
+            onchange="loadImage(event)"
+          />
+        </div>
+        <img id="labelPreview" src="" alt="" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="page">
+      <button
+        id="generateImageButton"
+        class="printButton"
+        onclick="printLabels()"
+      >
+        Imprimir
+      </button>
+      <div id="printArea"></div>
+    </div>
+  </body>
+</html>

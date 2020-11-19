@@ -1,0 +1,31 @@
+#page {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#labelPreview{
+  width: 12em;
+  align-self: center;
+  margin: 0px 8px 16px 8px;
+}
+.imageItem {
+  display: inline-block;
+  border: 1px solid gray;
+  border-collapse: collapse;
+}
+.printButton {
+  font-size: 120%;
+  font-weight: bold;
+  margin: 8px;
+  padding: 4px;
+  background-color: var(--primary-dark);
+  color: var(--text-on-dark-bg-color);
+  border-radius: var(--elementsBorderRadius);
+  border: 2px solid var(--primary-dark);
+  align-self: center;
+}
+#printArea {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
