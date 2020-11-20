@@ -54,12 +54,16 @@ html.build-mode body {
   text-align: center;
   color: rgb(207, 164, 70);
   font-weight: bold;
+  filter: brightness(0.7);
+  filter: saturate(130%);
+  z-index: -1;
 }
 .property {
   font-family: "Roboto", Arial;
   text-align: center;
   color: #4d4d4d;
   fill: #4d4d4d;
+  font-weight: bold;
 }
 
 /* Footer */

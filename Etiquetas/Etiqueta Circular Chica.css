@@ -8,27 +8,30 @@
   width: 3.62cm; /*Adjust this to fit the circle text*/
   position: absolute;
 }
-.propertyCircularChica {
-  font-size: 40%;
-  letter-spacing: 0.5pt;
-}
 .logoCircularChica {
-  width: 1.75cm;
+  width: 1.60cm;
   padding-top: 6px;
 }
 .sloganCircularChica {
   font-size: 60%;
+  line-height: 90%;
+  margin-top: 2px;
+  font-weight: bold;
 }
 .barcodeCircularChica {
-  font-size: 80%;
-  width: 3.6cm;
-  text-align: center;
+  /*width in the HTML, here doesn't work*/
+  filter: opacity(80%);
 }
 .productCircularChica {
   font-size: 70%;
-  padding: 0px 8px;
+  padding: 2px 8px;
+}
+.propertyCircularChica {
+  font-size: 40%;
+  letter-spacing: 0.3pt;
+  font-weight: bold;  
 }
 .quantityCircularChica {
   font-size: 65%;
-  padding: 2px 0px;
+  padding: 4px 0px;
 }

@@ -11,29 +11,34 @@
 }
 .sloganJabonSolido {
   font-size: 80%;
+  line-height: 90%;
 }
 .productJabonSolido {
   display: flex;
   align-items: center;
-  flex-grow: 1;
-  padding: 0px 4px;
+  flex-grow: 3;
+  padding: 5px 4px;
   font-size: 110%;
+  line-height: 90%;
 }
 .propertyJabonSolido {
   font-size: 80%;
+  line-height: 90%;
 }
 .barcodeJabonSolido {
-  padding: 4px 0px;
+  filter: opacity(80%);
 }
 .footerJabonSolido {
-  flex-grow: 3;
+  
 }
 .barcodeJabonSolido {
-  padding: 2px;
+  padding: 1px;
+  filter: opacity(80%);
 }
 .quantityJabonSolido {
   font-size: 75%;
-  padding: 4px;
+  margin-bottom: 4px;
+  margin-right: 4px;
   bottom: 4px;
   right: 8px;
 }

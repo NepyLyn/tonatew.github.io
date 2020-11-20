@@ -20,15 +20,17 @@
 }
 .sloganCircularGrande {
   font-size: 90%;
+  line-height: 90%;
+  margin-bottom: 2px;
 }
 .barcodeCircularGrande {
   text-align: center;
   font-size: 120%;
-  width: 5.4cm;
+  filter: opacity(80%);
 }
 .productCircularGrande {
   font-size: 110%;
-  padding: 0px 8px;
+  padding: 4px 8px;
 }
 .quantityCircularGrande {
   font-size: 100%;

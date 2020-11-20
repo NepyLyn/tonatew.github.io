@@ -10,9 +10,9 @@ function changeColors(color) {
   document.getElementById("productName").style.color = `#${color}`;
 }
 
-function changeBarcode(image) {
+function changeBarcode(imageName) {
   var barcodeImg = document.getElementById("barcodeImg");
-  barcodeImg.setAttribute("src", image);
+  barcodeImg.setAttribute("src", `/Codigos Barra/${imageName}`);
 }
 
 function saveAs(uri, filename) {
@@ -77,10 +77,12 @@ window.addEventListener(
           break;
 
         case "changeBarcode":
-          changeBarcode(event.data.arguments.image);
+          changeBarcode(event.data.arguments.fileName);
+          break
 
         case "saveToImage":
           saveToImage();
+          break
 
         default:
           console.log("Not correct function name");

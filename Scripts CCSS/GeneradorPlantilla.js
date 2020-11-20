@@ -11,7 +11,7 @@ const sizes = {
 
 const pageSizes = {
   //cm [width, height]
-  carta: { width: 21.6, height: 27.9 },
+  carta: { width: 21.59, height: 27.94 },
 };
 
 //cm
@@ -30,14 +30,28 @@ function changeSizeDescription() {
 
 function calcLabels(pageSize, labelSize) {
   //Portrait
-  columns = Math.floor((pageSize.width - 2 * margin) / labelSize.width);
-  rows = Math.floor((pageSize.height - 2 * margin) / labelSize.height);
-  let portraitCount = columns * rows;
+  portraitColumns = Math.floor((pageSize.width - 2 * margin) / labelSize.width);
+  portraitRows = Math.floor((pageSize.height - 2 * margin) / labelSize.height);
+  let portraitCount = portraitColumns * portraitRows;
   //Landscape
-  columns = Math.floor((pageSize.height - 2 * margin) / labelSize.width);
-  rows = Math.floor((pageSize.width - 2 * margin) / labelSize.height);
-  let landscapeCount = columns * rows;
-  return Math.max(portraitCount, landscapeCount);
+  landscapeColumns = Math.floor((pageSize.height - 2 * margin) / labelSize.width);
+  landscapeRows = Math.floor((pageSize.width - 2 * margin) / labelSize.height);
+  let landscapeCount = landscapeColumns * landscapeRows;
+
+  let pageSetup;
+  if (landscapeCount > portraitCount) { //Landscape
+    pageSetup = { count: landscapeCount, orientation: "landscape" }
+    console.log(pageSetup.orientation)
+    console.log(`columns: ${landscapeColumns}`)
+    console.log(`rows: ${landscapeRows}`)
+    return pageSetup
+  } else {  //Portrait
+    pageSetup = { count: portraitCount, orientation: "portrait" }
+    console.log(pageSetup.orientation)
+    console.log(`columns: ${portraitColumns}`)
+    console.log(`rows: ${portraitRows}`)
+    return pageSetup
+  }
 }
 
 function fillPage(image) {
@@ -49,7 +63,7 @@ function fillPage(image) {
   let numLabels = calcLabels(pageSizes.carta, {
     width: labelWidth,
     height: labelHeight,
-  });
+  }).count;
 
   let page = document.getElementById("printArea");
   for (i = 0; i < numLabels; i++) {
@@ -72,7 +86,7 @@ function loadImage(event) {
     var fr = new FileReader();
     fr.onload = function () {
       //Set the preview
-      var preview = document.getElementById('labelPreview')
+      var preview = document.getElementById("labelPreview");
       preview.src = fr.result;
       //Clean visualizer
       document.getElementById("printArea").innerHTML = "";
@@ -88,6 +102,31 @@ function loadImage(event) {
     // fallback -- perhaps submit the input to an iframe and temporarily store
     // them on the server until the user's session ends.
   }
+}
+
+function saveAsPDF() {
+  //page orientation and elements count calculation
+  var element = document.getElementById("printArea");
+  let selectedEtiqueta = document.getElementById("etiquetaSelect").value;
+  let labelWidth = sizes[selectedEtiqueta][0];
+  let labelHeight = sizes[selectedEtiqueta][1];
+
+  let pageOrientation = calcLabels(pageSizes.carta, {
+    width: labelWidth,
+    height: labelHeight,
+  }).orientation;
+  console.log(pageOrientation)
+
+  var opt = {
+    margin: 0.2,
+    filename: "Plantilla.pdf",
+    image: { type: "png", quality: 1 },
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "cm", format: "letter", orientation: pageOrientation },
+  };
+
+  // New Promise-based usage:
+  html2pdf().set(opt).from(element).save();
 }
 
 function printLabels() {

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="Scripts CCSS/GeneradorPlantilla.css" />
 
     <script src="/Scripts CCSS/GeneradorPlantilla.js"></script>
+    <script src="/Scripts CCSS/html2pdf.bundle.min.js"></script>
+    <script src="/Scripts CCSS/jquery-3.5.1.min.js"></script>
 
     <style>
       @font-face {
@@ -71,7 +73,7 @@
       <button
         id="generateImageButton"
         class="printButton"
-        onclick="printLabels()"
+        onclick="saveAsPDF()"
       >
         Imprimir
       </button>

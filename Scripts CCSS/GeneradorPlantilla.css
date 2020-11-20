@@ -3,14 +3,17 @@
   flex-wrap: wrap;
   flex-direction: column;
 }
-#labelPreview{
+#labelPreview {
   width: 12em;
   align-self: center;
   margin: 0px 8px 16px 8px;
 }
 .imageItem {
   display: inline-block;
-  border: 1px solid gray;
+  /*border: 1px solid gray;*/
+  border-color: gray;
+  border-style: solid;
+  border-width: thin;
   border-collapse: collapse;
 }
 .printButton {
@@ -23,6 +26,9 @@
   border-radius: var(--elementsBorderRadius);
   border: 2px solid var(--primary-dark);
   align-self: center;
+}
+.printButton:hover {
+  border-color: var(--primary-color);
 }
 #printArea {
   display: flex;

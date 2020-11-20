@@ -9,22 +9,29 @@
   padding: 2px 0px;
 }
 .sloganDesodChica {
-  font-size: 65%;
+  font-size: 60%;
+  font-weight: bold;
+  line-height: 90%;
 }
 .productDesodChica {
   display: flex;
   align-items: center;
-  padding: 4px;
-  flex-grow: 2;
+  padding: 2px;
+  flex-grow: 1;
+  line-height: 95%;
 }
 .propertyDesodChica {
   font-size: 60%;
+  line-height: 95%;
+  flex-grow: 1;
 }
 .footerDesodChica {
-  flex-grow: 3;
+  flex-grow: 4;
 }
 .barcodeDesodChica {
   padding: 0px;
+  filter: opacity(80%);
+  margin-bottom: 1px;
 }
 .quantityDesodChica {
   font-size: 70%;
