@@ -80,4 +80,5 @@ html.build-mode body {
 }
 .barcode {
   z-index: -1;
+  display: none;
 }

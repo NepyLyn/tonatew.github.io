@@ -48,6 +48,7 @@ function setBarcode(barcodeName) {
       },
       "*"
     );
+    console.log("Sent PostMessage")
     //iframe.contentWindow.postMessage(dataToSend, "*");
   }
 }
@@ -195,28 +196,17 @@ function loadBarcodeList(barcodeNameSelect) {
 }
 
 function changeBarcode() {
-  var selectedBarcode = document.getElementById('barcodeNameSelect').value
-  var barcodePreview = document.getElementById('barcodeImg')
-  barcodePreview.src = `/Codigos Barra/${selectedBarcode}`
+  var selectedBarcode = document.getElementById("barcodeNameSelect").value;
+  var barcodePreview = document.getElementById("barcodeImg")
 
+  barcodePreview.src = "/Codigos Barra/" + selectedBarcode + ".png"
+  if (selectedBarcode != "") {
+    barcodePreview.src = "/Codigos Barra/" + selectedBarcode + ".png"
+  }
+  else{
+    barcodePreview.src = "Resources/barcode.gif"
+  }
   setBarcode(selectedBarcode)
-
-  /*var fileInput = document.getElementById("uploadBarcodeInput");
-  var barcodeImg = document.getElementById("barcodeImg");
-
-  var reader;
-  if (fileInput.files && fileInput.files[0]) {
-    reader = new FileReader();
-
-    reader.onload = function (e) {
-      //To the cofiguration section
-      barcodeImg.setAttribute("src", e.target.result);
-      //To the label ifram
-      setBarcode(e.target.result);
-    };
-
-    reader.readAsDataURL(fileInput.files[0]);
-  }*/
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -224,4 +214,5 @@ document.addEventListener("DOMContentLoaded", () => {
   loadIngredientList(document.getElementsByClassName("ingredientsDropList"));
   loadBarcodeList(document.getElementById("barcodeNameSelect"));
   changeEtiqueta();
+  changeBarcode();
 });

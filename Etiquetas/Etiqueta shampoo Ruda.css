@@ -34,12 +34,15 @@
 }
 .footerShampooRuda {
   flex-grow: 3;
+  display: flex;
+  flex-direction: row;
 }
 .barcodeShampooRuda {
   padding: 0px;
   filter: opacity(80%);
 }
 .quantityShampooRuda {
+  margin-left: auto;
   font-size: 80%;
   margin: 2px 4px;
 }

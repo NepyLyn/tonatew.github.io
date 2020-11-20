@@ -29,16 +29,18 @@
   filter: opacity(80%);
 }
 .footerJabonSolido {
-  
+  display: flex;
+  flex-direction: row;
 }
 .barcodeJabonSolido {
   padding: 1px;
   filter: opacity(80%);
 }
 .quantityJabonSolido {
+  justify-self: flex-end;
+  align-self: flex-end;
+  margin-left: auto;
+  padding-right: 4px;
+  padding-bottom: 2px;
   font-size: 75%;
-  margin-bottom: 4px;
-  margin-right: 4px;
-  bottom: 4px;
-  right: 8px;
 }

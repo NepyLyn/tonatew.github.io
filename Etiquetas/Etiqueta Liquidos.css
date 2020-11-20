@@ -24,15 +24,19 @@
 }
 .propertyLiquidos {
   font-size: 90%;
+  flex: 1 1 auto;
 }
 .footerLiquidos {
-  flex-grow: 2;
+  display: flex;
+  flex-direction: row;
 }
 .barcodeLiquidos {
   padding: 0px;
   filter: opacity(80%);
 }
 .quantityLiquidos {
+  margin-left: auto;
+  padding-right: 4px;
+  padding-bottom: 2px;
   font-size: 85%;
-  margin: 2px 2px;
 }

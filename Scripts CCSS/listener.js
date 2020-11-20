@@ -12,7 +12,12 @@ function changeColors(color) {
 
 function changeBarcode(imageName) {
   var barcodeImg = document.getElementById("barcodeImg");
-  barcodeImg.setAttribute("src", `/Codigos Barra/${imageName}`);
+  if (imageName == "") {
+    barcodeImg.style.display = "none";
+  } else {
+    barcodeImg.style.display = "inline";
+    barcodeImg.setAttribute("src", `/Codigos Barra/${imageName}.png`);
+  }
 }
 
 function saveAs(uri, filename) {
@@ -35,15 +40,14 @@ function download() {}
 
 function saveToImage() {
   html2canvas(document.body, {
-    scale: 8
+    scale: 8,
     //foreignObjectRendering: true,
   }).then((canvas) => {
     var url = canvas.toDataURL();
-    link = document.createElement('a')
-    link.href = url
-    link.download = "Etiqueta.png"
-    link.click()
-
+    link = document.createElement("a");
+    link.href = url;
+    link.download = "Etiqueta.png";
+    link.click();
   });
 }
 
@@ -78,11 +82,11 @@ window.addEventListener(
 
         case "changeBarcode":
           changeBarcode(event.data.arguments.fileName);
-          break
+          break;
 
         case "saveToImage":
           saveToImage();
-          break
+          break;
 
         default:
           console.log("Not correct function name");
@@ -90,6 +94,7 @@ window.addEventListener(
       }
       //document.querySelector(event.data.target).textContent = event.data.value
     }
+    console.log("Recivied Message");
   },
   false
 );
