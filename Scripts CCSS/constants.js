@@ -2,6 +2,7 @@
 const sizes = {
   //Name (width, height)
   "Circular Chica": [4, 4],
+  "Circular Mediana": [4.5, 4.5],
   "Circular Grande": [6, 6],
   "Desodorante Chica": [3, 4],
   "Desodorante Grande": [4, 5.5],

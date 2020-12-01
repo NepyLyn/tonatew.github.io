@@ -1,14 +1,3 @@
-const sizes = {
-  //Name (width, height)
-  "Circular Chica": [4, 4],
-  "Circular Grande": [6, 6],
-  "Desodorante Chica": [3, 4],
-  "Desodorante Grande": [4, 5.5],
-  Jabones: [6, 4],
-  Liquidos: [5, 7],
-  "Shampoo Ruda": [5, 7.5],
-};
-
 const pageSizes = {
   //cm [width, height]
   carta: { width: 21.59, height: 27.94 },
