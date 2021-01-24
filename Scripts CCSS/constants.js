@@ -52,6 +52,7 @@ const barcodeNames = [
   "Desodorante Alumbre",
   "Desodorante Leche Magnesia",
   "Desodorante Solido Coco, Karite, Bicarbonato",
+  "Exfoliante Bicarbonato y Coco",
   "Gel Antibacterial Manos Arnica 250ml Con Dispensador",
   "Gel Antibacterial Manos Arnica Con Dispensador 1L",
   "Gel Antibacterial Manos Arnica Con Dispensador 300ml",
