@@ -1,0 +1,67 @@
+/* --------------- Border Pomada Labios ----------------- */
+.borderPomadaLabios {
+  display: flex;
+  flex-direction: row;
+  width: 12.45cm;
+  height: 1.80cm;
+  border-right: none;
+  border-width: 0.05cm;
+}
+.facePomadaLabios {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%; /*To have the same size*/
+  justify-content: center;
+}
+.logoPomadaLabios{
+  height: 0.7cm;
+  padding: 2px;
+  flex-direction: row;
+}
+.sloganPomadaLabios {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45%;
+  line-height: 110%;
+  text-align: center;
+  padding: 4px 2px;
+  font-weight: bold;
+}
+.arnicaImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.arnicaImageSmall{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.productPomadaLabios {
+  font-size: 75%;
+  display: flex;
+  align-items: center;
+  padding: 0px 2px 2px 2px;
+}
+.propertyPomadaLabios {
+  font-size: 50%;
+  padding: 2px;
+}
+.warning .red {
+  color: rgb(255, 64, 64);
+  font-weight: bold;
+}
+.footerPomadaLabios {
+  display: flex;
+  flex-direction: row;
+}
+.barcodePomadaLabios {
+  padding: 0px;
+  filter: opacity(80%);
+}
+.quantityPomadaLabios {
+  margin-left: auto;
+  font-size: 100%;
+  margin: 2px 4px;
+}

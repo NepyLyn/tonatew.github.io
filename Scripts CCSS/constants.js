@@ -8,6 +8,7 @@ const sizes = {
   "Desodorante Grande": [4, 5.5],
   Jabones: [6, 4],
   Liquidos: [5, 7],
+  "Pomada Labios": [12.5, 1.9],
   "Shampoo Ruda": [5, 7.5],
 };
 
@@ -41,6 +42,7 @@ const ingredients = {
 
 const barcodeNames = [
   "Acondicionador Solido",
+  "Balsamo Labial",
   "Bolsa De Arnica Seca",
   "Bolsa De Espinosilla Seca",
   "Bolsa De Marrubio Seca",
