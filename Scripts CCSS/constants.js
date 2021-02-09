@@ -6,7 +6,7 @@ const sizes = {
   "Circular Grande": [6, 6],
   "Desodorante Chica": [3, 4],
   "Desodorante Grande": [4, 5.5],
-  Jabones: [6, 4],
+  Jabones: [5, 3.5],
   Liquidos: [5, 7],
   "Pomada Labios": [12.5, 1.9],
   "Shampoo Ruda": [5, 7.5],

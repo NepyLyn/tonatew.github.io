@@ -1,16 +1,16 @@
 /* --------------- Jabon Solido----------------- */
 .borderJabonSolido {
-  width: 5.7cm;
-  height: 3.7cm;
+  width: 4.7cm;
+  height: 3.2cm;
   border-radius: 16px;
   border-width: 0.15cm;
 }
 .logoJabonSolido {
-  height: 1cm;
+  height: 0.9cm;
   padding: 2px 0px;
 }
 .sloganJabonSolido {
-  font-size: 80%;
+  font-size: 75%;
   line-height: 90%;
 }
 .productJabonSolido {
@@ -18,11 +18,11 @@
   align-items: center;
   flex-grow: 3;
   padding: 5px 4px;
-  font-size: 110%;
+  font-size: 100%;
   line-height: 90%;
 }
 .propertyJabonSolido {
-  font-size: 80%;
+  font-size: 70%;
   line-height: 90%;
 }
 .barcodeJabonSolido {
@@ -35,6 +35,7 @@
 .barcodeJabonSolido {
   padding: 1px;
   filter: opacity(80%);
+  z-index: -1;
 }
 .quantityJabonSolido {
   justify-self: flex-end;
@@ -42,5 +43,5 @@
   margin-left: auto;
   padding-right: 4px;
   padding-bottom: 2px;
-  font-size: 75%;
+  font-size: 65%;
 }
