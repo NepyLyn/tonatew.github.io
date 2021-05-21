@@ -6,8 +6,9 @@ const sizes = {
   "Circular Grande": [6, 6],
   "Desodorante Chica": [3, 4],
   "Desodorante Grande": [4, 5.5],
-  Jabones: [6, 4],
+  Jabones: [5, 3.5],
   Liquidos: [5, 7],
+  "Pomada Labios": [12.5, 1.9],
   "Shampoo Ruda": [5, 7.5],
 };
 
@@ -41,6 +42,7 @@ const ingredients = {
 
 const barcodeNames = [
   "Acondicionador Solido",
+  "Balsamo Labial",
   "Bolsa De Arnica Seca",
   "Bolsa De Espinosilla Seca",
   "Bolsa De Marrubio Seca",
@@ -52,6 +54,7 @@ const barcodeNames = [
   "Desodorante Alumbre",
   "Desodorante Leche Magnesia",
   "Desodorante Solido Coco, Karite, Bicarbonato",
+  "Exfoliante Bicarbonato y Coco",
   "Gel Antibacterial Manos Arnica 250ml Con Dispensador",
   "Gel Antibacterial Manos Arnica Con Dispensador 1L",
   "Gel Antibacterial Manos Arnica Con Dispensador 300ml",
@@ -66,12 +69,14 @@ const barcodeNames = [
   "Jabon Solido Arnica Miel",
   "Jabon Solido Arroz Y miel",
   "Jabon Solido Avena Miel",
+  "Jabon Solido Carbon",
   "Jabon Solido De Marrubio Azomiate",
   "Jabon Solido De Romero Miel",
   "Jabon Solido De Rosa De Castilla",
   "JABON SOLIDO DE TEPEZCOHIUTE Y CUACAHALALATE",
   "Jabon Solido Espinosilla y Arnica Higiene Intima",
   "Jabon Solido Manzanilla Y Miel",
+  "Jabon Solido Miel",
   "Pomada Arnica",
   "Shampoo Liquido Anticaida Romero, Espinosilla 250ml",
   "Shampoo Liquido Anticaida Romero, Espinosilla 500ml",
