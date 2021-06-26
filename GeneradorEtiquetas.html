@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador Etiquetas</title>
+    <!-- Scripts -->
+    <script src="Scripts CCSS/GeneradorEtiquetas.js"></script>
+    <script src="Scripts CCSS/constants.js"></script>
+    <script src="Scripts CCSS/html2canvas.min.js"></script>
+    <script scr="Scripts CCSS/jspdf.umd.min.js"></script>
+    <script src="components/header/headerTemplate.js" type="text/javascript" defer></script>
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="Scripts CCSS/GeneradorEtiquetas.css" />
+    <link rel="stylesheet" href="Scripts CCSS/dropList.css" />
+    <link rel="stylesheet" href="Scripts CCSS/pallete.css">
+  </head>
+
+  <style>
+    @font-face {
+      font-family: arnimex;
+      src: url("Resources/arnimex.ttf");
+    }
+  </style>
+
+  <body>
+    <header-component></header-component>
+    <div id="config">
+      <div id="configType" class="verticalContainer configCategory">
+        <div class="labelAndForm">
+          <label for="etiquetaSelect">Etiqueta tipo:</label>
+          <select
+            name="labelType"
+            id="etiquetaSelect"
+            onchange="changeEtiqueta()"
+            class="dropList"
+          >
+            <option selected value="Circular Chica">Circular Chica</option>
+            <option value="Circular Mediana">Circular Mediana</option>
+            <option value="Circular Grande">Circular Grande</option>
+            <option value="Desodorante Chica">Desodorante Chica</option>
+            <option value="Desodorante Grande">Desodorante Grande</option>
+            <option value="Jabones">Jabón Sólido</option>
+            <option value="Liquidos">Gel-Shampoo-Jabon Líquido</option>
+            <option value="Pomada Labios">Balsamo Labial</option>
+            <option value="Shampoo Ruda">Shampoo Ruda</option>
+          </select>
+        </div>
+        <table>
+          <tr class="horizontalContainer">
+            <th>Ancho</th>
+            <th>Alto</th>
+          </tr>
+          <tr class="horizontalContainer">
+            <td id="labelWidth">4 cm</td>
+            <td id="labelHeight">4 cm</td>
+          </tr>
+        </table>
+      </div>
+      <!-- Options created by script -->
+      <div id="configIngredients" class="verticalContainer configCategory">
+        <div class="horizontalContainer">
+          <div class="labelAndForm">
+            <label for="ingredientSelect1">Color 1:</label>
+            <select
+              name="ingredient1"
+              id="ingredientSelect1"
+              class="ingredientsDropList dropList"
+            ></select>
+          </div>
+          <div class="labelAndForm">
+            <label for="ingredientSelect2">Color 2:</label>
+            <select
+              name="ingredient2"
+              id="ingredientSelect2"
+              class="ingredientsDropList dropList"
+            ></select>
+          </div>
+          <div class="labelAndForm">
+            <label for="ingredientSelect3">Color 3:</label>
+            <select
+              name="ingredient3"
+              id="ingredientSelect3"
+              class="ingredientsDropList dropList"
+            ></select>
+          </div>
+        </div>
+        <div class="textInput">
+          <label for="productNameInput">Nombre Producto:&nbsp;</label>
+          <input
+            type="text"
+            name="product"
+            id="productNameInput"
+            placeholder="Escribe aqui el nombre"
+            onkeyup="setText(event, '#productName')"
+          />
+        </div>
+        <div class="textInput">
+          <label for="effectInput">Propiedad:&nbsp;</label>
+          <input
+            type="text"
+            name="effect"
+            id="effectInput"
+            placeholder="Escribe aqui la propiedad"
+            onkeyup="setText(event, '#productProperty')"
+          />
+        </div>
+      </div>
+      <div id="configQuantity" class="verticalContainer configCategory">
+        <div class="labelAndForm">
+          <label for="quantityInput">Cantidad:</label>
+          <input
+            type="text"
+            name="quantity"
+            id="quantityInput"
+            placeholder="gr / ml"
+            onkeyup="setText(event, '#quantity')"
+          />
+        </div>
+        <div class="labelAndForm">
+          <label for="barcodeNameSelect">Codigo de Barras:</label>
+          <select
+            name="labelType"
+            id="barcodeNameSelect"
+            onchange="changeBarcode()"
+            class="dropList"
+          >
+        <option value="" selected="selected">Ninguno</option></select>
+        </div>
+        <img
+          id="barcodeImg"
+          src="Resources/barcode.gif"
+          alt="Codigo de barras"
+        />
+      </div>
+    </div>
+    <hr />
+
+    <div id="visualizer">
+      <button
+        id="generateImageButton"
+        class="generateButton"
+        onclick="saveLabel()"
+      >
+        Guardar Etiqueta
+      </button>
+      <iframe
+        src="Etiquetas/Etiqueta Circular Chica.html"
+        frameborder="0"
+        id="labelFrame"
+        scrolling="no"
+      ></iframe>
+    </div>
+  </body>
+</html>

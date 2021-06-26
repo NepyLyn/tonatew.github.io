@@ -1,0 +1,63 @@
+body {
+  background-image: url("/Resources/Patterns/toolHub.png");
+}
+
+.toolContainer {
+  margin: 2rem;
+  display: flex;
+  flex-flow: row;
+  
+  flex-wrap: wrap;
+}
+
+.tool, tool:hover, tool:focus, .tool:visited, .tool:active{
+  width: 15rem;
+  height: 15rem;
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  color: inherit;
+  margin: 1rem;
+  border: 1rem solid white;
+}
+
+.tool:hover {
+  cursor: pointer;
+}
+
+.toolIcon {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  width: 60%;
+  padding: 0.5rem;
+}
+
+.toolName {
+  text-align: center;
+  font-size: 2rem;
+  font-family: arnimex;
+  padding: 0.5rem;
+  flex-grow: 1;
+  background-color: var(--topBar);
+  color: var(--text-on-dark-bg-color);
+}
+
+.toolName:hover{
+  background-color: var(--seconday-dark);
+  color: var(--text-on-light-bg-color);
+}
+
+/* Tools colors */
+#tool1{
+    background-color: var(--tool1Solid);
+}
+
+#tool2{
+    background-color: var(--tool2Solid);
+}
+
+#tool3{
+    background-color: var(--tool3Solid);
+}

@@ -1,0 +1,101 @@
+/* 
+** The Header Media Queries **
+** Tweak as per your needs **
+*/
+.brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo{
+  height: 3rem;
+  padding: 0 1rem;
+  
+}
+
+.site-header {
+  position: relative;
+  background-color: var(--topBar);
+}
+
+.site-header a {
+  text-decoration: none;
+  color: var(--text-on-dark-bg-color);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: large;
+}
+
+.site-header__wrapper {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 600px) {
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex;
+  }
+}
+
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: var(--topBar);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+  }
+  .nav__wrapper.active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav__item a {
+  display: block;
+  color: var(--text-on-dark-bg-color);
+  padding: 1.5rem 1rem;
+}
+
+.nav__item :hover{
+  background-color: var(--seconday-dark);
+  color: var(--text-on-light-bg-color);
+}
+
+.nav__toggle {
+  background-color: var(--topBar); /* Blue background */
+  border: 0.1rem solid var(--primary-color); /* Remove borders */
+  border-radius: 10%;
+  color: white; /* White text */
+  padding: 12px 16px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+  display: none;
+  background-image: url("/Resources/burguerMenu.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: center;
+  height: 3rem;
+  width: 3rem;
+}
+@media (max-width: 599px) {
+  .nav__toggle {
+    display: block;
+    position: absolute;
+    right: 0.5rem;
+    top: 0.5rem;
+  }
+}

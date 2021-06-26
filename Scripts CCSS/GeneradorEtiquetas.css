@@ -1,20 +1,9 @@
-:root {
-  /* App Theme / Brand */
-  --primary-color: #b4eced;
-  --primary-dark: #034955;
-  --secondary-color: #fdbbbd;
-  --seconday-dark: #fcbabb;
-  --text-on-light-bg-color: #023538;
-  --text-on-dark-bg-color: #e9ffff;
 
-  --inputElementsBorder: 2px solid var(--primary-color);
-  --elementsBorderRadius: 4px;
-  --panelsBorderRadius: 16px;
-}
 /* The arnimex font is the html file (idk still why firefox doesn't allow font here) */
 body {
   margin: 0;
   padding: 0;
+  background-color: var(--backgroundColorDark);
 }
 html.build-mode body {
   position: fixed;
@@ -82,12 +71,12 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   font-family: "Arial", sans-serif;
-  color: var(--primary-dark);
+  color: var(--text-on-light-bg-color);
   font-size: 1em;
   padding: 16px 16px;
 }
 .configCategory {
-  border: 4px solid var(--secondary-color);
+  border: 4px solid var(--primary-dark);
   margin: 8px 8px;
   border-radius: var(--panelsBorderRadius);
 }
@@ -140,6 +129,7 @@ input[type="file"] {
   border: var(--inputElementsBorder);
   border-radius: var(--elementsBorderRadius);
   padding: 6px 12px;
+  color: var(--text-on-light-color);
 }
 .loadButton:hover {
   border-color: var(--primary-dark);
@@ -154,11 +144,12 @@ input[type="file"] {
   font-weight: bold;
   margin: 8px;
   padding: 4px;
-  background-color: var(--primary-dark);
+  background-color: var(--topBar);
   color: var(--text-on-dark-bg-color);
   border-radius: var(--elementsBorderRadius);
-  border: 2px solid var(--primary-dark);
+  border: 2px solid black;
 }
 .generateButton:hover {
-  border-color: var(--secondary-color);
+  background-color: var(--seconday-dark);
+  color: var(--text-on-light-bg-color);
 }

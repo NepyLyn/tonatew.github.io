@@ -1,0 +1,22 @@
+:root {
+    /* App Theme / Brand */
+    --topBar: #514663;
+    --primary-color: #67db67;
+    --primary-dark: #177717;
+    --secondary-color: #FFFF00;
+    --seconday-dark: #B8B800 ;
+    --text-on-light-bg-color: #514663;
+    --text-on-dark-bg-color: #A8BFC7;
+  
+    --inputElementsBorder: 2px solid var(--seconday-dark);
+    --elementsBorderRadius: 4px;
+    --panelsBorderRadius: 16px;
+
+    /* Tool Colors */
+    --tool1Solid: #f07bb3;
+    --tool1Transparent: #f07bb39d;
+    --tool2Solid: #BBFFFF;
+    --tool2Transparent: #bbffff9d;
+    --tool3Solid: #d86dff;
+    --tool3Transparent: #d86dff9d;
+  }
