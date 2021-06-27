@@ -1,8 +1,3 @@
-const pageSizes = {
-  //cm [width, height]
-  carta: { width: 21.59, height: 27.94 },
-};
-
 //cm
 const margin = 0.2;
 

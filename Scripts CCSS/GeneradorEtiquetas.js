@@ -48,7 +48,7 @@ function setBarcode(barcodeName) {
       },
       "*"
     );
-    console.log("Sent PostMessage")
+    console.log("Sent PostMessage");
     //iframe.contentWindow.postMessage(dataToSend, "*");
   }
 }
@@ -143,12 +143,8 @@ function changeEtiqueta() {
   //Change iframe size and ifo
   iframe.style.width = `${sizes[selectedEtiqueta][0]}cm`;
   iframe.style.height = `${sizes[selectedEtiqueta][1]}cm`;
-  document.getElementById(
-    "labelWidth"
-  ).innerHTML = `${sizes[selectedEtiqueta][0]} cm`;
-  document.getElementById(
-    "labelHeight"
-  ).innerHTML = `${sizes[selectedEtiqueta][1]} cm`;
+  document.getElementById("labelWidth").innerHTML = `${sizes[selectedEtiqueta][0]} cm`;
+  document.getElementById("labelHeight").innerHTML = `${sizes[selectedEtiqueta][1]} cm`;
 }
 
 function changeEtiquetaColors() {
@@ -197,16 +193,15 @@ function loadBarcodeList(barcodeNameSelect) {
 
 function changeBarcode() {
   var selectedBarcode = document.getElementById("barcodeNameSelect").value;
-  var barcodePreview = document.getElementById("barcodeImg")
+  var barcodePreview = document.getElementById("barcodeImg");
 
-  barcodePreview.src = "/Codigos Barra/" + selectedBarcode + ".png"
+  barcodePreview.src = "/Codigos Barra/" + selectedBarcode + ".png";
   if (selectedBarcode != "") {
-    barcodePreview.src = "/Codigos Barra/" + selectedBarcode + ".png"
+    barcodePreview.src = "/Codigos Barra/" + selectedBarcode + ".png";
+  } else {
+    barcodePreview.src = "Resources/barcode.gif";
   }
-  else{
-    barcodePreview.src = "Resources/barcode.gif"
-  }
-  setBarcode(selectedBarcode)
+  setBarcode(selectedBarcode);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

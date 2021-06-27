@@ -91,6 +91,7 @@ h1 {
 .dropList {
   color: var(--text-on-light-bg-color);
   border: var(--inputElementsBorder);
+  font-size: 1rem;
 }
 .dropList:hover {
   border-color: var(--primary-dark);

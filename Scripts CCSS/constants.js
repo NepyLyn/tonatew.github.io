@@ -12,6 +12,14 @@ const sizes = {
   "Shampoo Ruda": [5, 7.5],
 };
 
+const pageSizes = {
+  //cm [width, height]
+  carta:    {jsPDF:"letter", width: 21.59,  height: 27.94},
+  oficio:   {jsPDF:"legal", width: 23.5,   height: 35.5},
+  tabloide: {jsPDF:"tabloid", width: 27.9,   height: 43.1},
+  a4:       {jsPDF:"a4", width: 21,     height: 29.6}
+};
+
 const ingredients = {
   Ninguno: "",
   Romero: "90C165",
@@ -91,3 +99,61 @@ const barcodeNames = [
   "Shampoo Solido Flor De Hibisco, Citricos",
   "Shampoo Solido Romero",
 ];
+
+const patterns = {
+  //Ingredient# path
+  arnic1:       "Resources/Patterns/arnic1.png",
+  arnic2:       "Resources/Patterns/arnic2.png",
+  arnic3:       "Resources/Patterns/arnic3.png",
+
+  chamomille1:   "Resources/patterns/chamomille1.png",
+  chamomille2:   "Resources/patterns/chamomille2.png",
+  chamomille3:   "Resources/patterns/chamomille3.png",
+  chamomille4:   "Resources/patterns/chamomille4.png",
+  chamomille5:   "Resources/patterns/chamomille5.png",
+  chamomille6:   "Resources/patterns/chamomille6.png",
+  chamomille7:   "Resources/patterns/chamomille7.png",
+
+  coconut1:      "Resources/patterns/coconut1.png",
+  coconut2:      "Resources/patterns/coconut2.png",
+  coconut3:      "Resources/patterns/coconut3.png",
+
+  coffee1:        "Resources/patterns/coffee1.png",
+  coffee2:        "Resources/patterns/coffee2.png",
+  coffee3:        "Resources/patterns/coffee3.png",
+
+  flowers1:     "Resources/Patterns/flowers1.png",
+  flowers2:     "Resources/Patterns/flowers2.png",
+  flowers3:     "Resources/Patterns/flowers3.png",
+  flowers4:     "Resources/Patterns/flowers4.png",
+  flowers5:     "Resources/Patterns/flowers5.png",
+  flowers6:     "Resources/Patterns/flowers6.png",
+  flowers7:     "Resources/Patterns/flowers7.png",
+  flowers8:     "Resources/Patterns/flowers8.png",
+  flowers9:     "Resources/Patterns/flowers9.png",
+  flowers10:    "Resources/Patterns/flowers10.png",
+  flowers11:    "Resources/Patterns/flowers11.png",
+  flowers12:    "Resources/Patterns/flowers12.png",
+  flowers13:    "Resources/Patterns/flowers13.png",
+  flowers14:    "Resources/Patterns/flowers14.png",
+  flowers15:    "Resources/Patterns/flowers15.png",
+
+  honey1:        "Resources/Patterns/honey1.png",
+  honey2:        "Resources/Patterns/honey2.png",
+  honey3:        "Resources/Patterns/honey3.png",
+  honey4:        "Resources/Patterns/honey4.png",
+  honey5:        "Resources/Patterns/honey5.png",
+  honey6:        "Resources/Patterns/honey6.png",
+  honey7:        "Resources/Patterns/honey7.png",
+
+  offtopic1:      "Resources/Patterns/offtopic1.png",
+  
+  shape1:        "Resources/Patterns/shape1.png",
+  shape2:        "Resources/Patterns/shape2.png",
+  shape3:        "Resources/Patterns/shape3.png",
+  shape4:        "Resources/Patterns/shape4.png",
+  shape5:        "Resources/Patterns/shape5.png",
+  shape6:        "Resources/Patterns/shape6.png",
+  shape7:        "Resources/Patterns/shape7.png",
+  shape8:        "Resources/Patterns/shape8.png"
+};

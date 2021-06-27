@@ -28,7 +28,7 @@
   align-self: center;
 }
 .printButton:hover {
-  border-color: var(--primary-color);
+  border-color: var(--seconday-dark);
 }
 #printArea {
   display: flex;

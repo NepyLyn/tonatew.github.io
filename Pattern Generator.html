@@ -1,18 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pattern Generator</title>
 
-    <link rel="stylesheet" href="Scripts CCSS/reset.min.css">
-    <link rel="stylesheet" href="Scripts CCSS/pallete.css">
-    
-    <script src="components/header/headerTemplate.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="Scripts CCSS/reset.min.css" />
+    <link rel="stylesheet" href="Scripts CCSS/pallete.css" />
+    <link rel="stylesheet" href="Scripts CCSS/GeneradorEtiquetas.css" />
+    <link rel="stylesheet" href="Scripts CCSS/PatternGenerator.css" />
+    <link rel="stylesheet" href="Scripts CCSS/dropList.css" />
+    <link rel="stylesheet" href="Scripts CCSS/visualizer.css" />
 
-</head>
-<body>
-    <header-component></header-component>    
-</body>
+    <script
+      src="Components/header/headerTemplate.js"
+      type="text/javascript"
+      defer
+    ></script>
+    <script src="Scripts CCSS/PatternGenerator.js"></script>
+    <script src="Scripts CCSS/constants.js"></script>
+    <script src="/Scripts CCSS/html2pdf.bundle.min.js"></script>
+
+    <style>
+      @font-face {
+        font-family: arnimex;
+        src: url("Resources/arnimex.ttf");
+      }
+    </style>
+  </head>
+
+  <body>
+    <header-component></header-component>
+
+    <div id="config">
+      <div id="configSize" class="verticalContainer configCategory">
+        <div class="labelAndForm">
+          <label for="sizeSelect">Tamaño hoja:</label>
+          <select
+            name="printSize"
+            id="sizeSelect"
+            onchange="changePrintSize()"
+            class="dropList"
+          >
+            <option selected value="carta">Carta</option>
+            <option value="oficio">Oficio</option>
+            <option value="tabloide">Tabloide</option>
+            <option value="a4">A4</option>
+          </select>
+        </div>
+        <div class="labelAndForm">
+          <label for="quantityInput">Ancho [cm]:</label>
+          <input
+            type="number"
+            name="quantity"
+            id="printWidth"
+            placeholder="cm"
+          />
+          <br />
+          <label for="quantityInput">Alto [cm]:</label>
+          <input
+            type="number"
+            name="quantity"
+            id="printHeight"
+            placeholder="cm"
+          />
+        </div>
+        <div class="labelAndForm">
+          <label for="texelSize">Tamaño celda:</label>
+          <select
+            name="texelSize"
+            id="texelSize"
+            onchange="changeTexelSize()"
+            class="dropList"
+          >
+            <option selected value="medium">normal</option>
+            <option value="small">chico</option>
+            <option value="large">grande</option>
+          </select>
+        </div>
+      </div>
+      <div id="configPattern" class="verticalContainer configCategory">
+        <span class="instruction">Elige un patrón</span>
+        <div class="gallery horizontalContainer"></div>
+      </div>
+    </div>
+
+    <hr />
+    <div id="page">
+      <div class="verticalContainer">
+        <button
+          id="generatePDFButton"
+          class="printButton"
+          onclick="saveAsPDF()"
+        >
+          Guardar Plantilla PDF
+        </button>
+        <button
+          id="generateImageButton"
+          class="printButton"
+          onclick="save()"
+        >
+          Guardar Imagen Celda
+        </button>
+        <div id="printArea"></div>
+      </div>
+    </div>
+  </body>
 </html>
