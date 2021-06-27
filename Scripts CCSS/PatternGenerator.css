@@ -1,21 +1,80 @@
-.instruction{
-    margin: 8px;
-    font-family: arnimex;
-    font-size: 3rem;
+.instruction {
+  margin: 8px;
+  font-family: arnimex;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.galleryItem {
+  width: 128px;
+  margin: 8px;
+  border: 0.5rem solid var(--topBar);
+}
+.galleryItem:hover {
+  border: 0.5rem solid var(--seconday-dark);
+}
+
+#page{
+    padding: 1rem;
+}
+
+#printArea {
+  width: 100px;
+  height: 100px;
+  background-image: url("/Resources/Patterns/coffee1.png");
+  
+}
+
+.imgButton {
+  width: 8rem;
+  height: 8 rem;
+}
+
+/*////////////////////*/
+.imgButtonsContainer {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  
+}
+
+.imgButton,
+imgButton:hover,
+imgButton:focus,
+.imgButton:visited,
+.imgButton:active {
+  align-items: stretch;
+  align-content: stretch;
+  display: flex;
+  flex-flow: column;
+  text-decoration: none;
+  color: inherit;
+  border: 0.3rem solid gray;
+  margin: 0.5rem;
+  background-color: transparent;
+  padding: 0;
+}
+.imgButton:hover {
+  cursor: pointer;
+}
+
+.imgButtonImage {
+    display: flex;
+    padding: 5%;
+    width: 45%;
+    align-self: center;
+}
+
+.imgButtonName{
     text-align: center;
+    font-family: arnimex;
+    flex-grow: 1;
+    padding: 5%;
+    background-color: var(--topBar);
+    color: var(--text-on-dark-bg-color);
+    font-size: 1.2rem;
 }
-
-.galleryItem{
-    width: 128px;
-    margin: 8px;
-    border: 0.5rem solid var(--topBar);
-}
-.galleryItem:hover{
-    border: 0.5rem solid var(--seconday-dark);
-}
-
-#printArea{
-    width: 100px;
-    height: 100px;
-    background-image: url('/Resources/Patterns/coffee1.png');
-}
+.imgButtonName:hover {
+    background-color: var(--seconday-dark);
+    color: var(--text-on-light-bg-color);
+  }
