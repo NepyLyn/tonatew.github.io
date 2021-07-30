@@ -1,0 +1,66 @@
+/* --------------- Border Shampoo Ruda----------------- */
+.background {
+  background-image: url("/Resources/shampooPerro.png");
+  background-size: contain;
+  width: 5cm;
+  height: 10cm;
+}
+.borderShampooRuda {
+  width: 5cm;
+  height: 10cm;
+}
+.logoShampooPerro {
+  padding: 4px 0px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.sloganShampooPerro {
+  font-size: 70%;
+  line-height: 100%;
+}
+.productShampooPerro{
+  display: flex;
+  align-items: center;
+  padding: 14px 2px 2px 2px;
+  justify-content: center;
+  color: #3362C1;
+  font-size: 150%;
+}
+.productIngredients{
+  color: #008d6a;
+}
+.propertyShampooPerro {
+  font-size: 75%;
+}
+.warning {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-size: 72%;
+  padding: 2px 8px;
+  line-height: 130%;
+  color: white;
+  position: relative;
+  top: 36%;
+}
+.warning .red {
+  color: #dd4477;
+  font-weight: bold;
+}
+.footerShampooPerro {
+  flex-grow: 3;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 37%;
+}
+.barcodeShampooRuda {
+  padding: 0px;
+  filter: opacity(80%);
+}
+.quantityShampooPerro {
+  font-size: 80%;
+  margin-left: 75%;
+  color: white;
+}

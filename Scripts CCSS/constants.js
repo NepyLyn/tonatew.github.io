@@ -10,6 +10,7 @@ const sizes = {
   Liquidos: [5, 7],
   "Pomada Labios": [12.5, 1.9],
   "Shampoo Ruda": [5, 7.5],
+  "Shampoo Perro": [5, 10]
 };
 
 const pageSizes = {
@@ -137,6 +138,8 @@ const patterns = {
   flowers13:    "Resources/Patterns/flowers13.png",
   flowers14:    "Resources/Patterns/flowers14.png",
   flowers15:    "Resources/Patterns/flowers15.png",
+  flowers16:    "Resources/Patterns/flowers16.png",
+  flowers17:    "Resources/Patterns/flowers17.png",
 
   honey1:        "Resources/Patterns/honey1.png",
   honey2:        "Resources/Patterns/honey2.png",
